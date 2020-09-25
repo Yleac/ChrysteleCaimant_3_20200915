@@ -1,0 +1,30 @@
+footer {
+  background-color: $color-bg-footer;
+  font: {
+    family: $txt-font;
+    size: $fontsize-small;
+  }
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $color-white;
+
+  img {
+    width: 10%;
+    height: auto;
+  }
+
+  i {
+    padding-right: 10px;
+  }
+
+  a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: $color-white;
+    &:hover {
+      color: $color-primary-3;
+      text-decoration: underline;
+    }
+  }
+}
