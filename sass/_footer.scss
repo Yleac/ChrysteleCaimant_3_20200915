@@ -1,5 +1,6 @@
 footer {
   background-color: $color-bg-footer;
+  text-align: left;
   font: {
     family: $txt-font;
     size: $fontsize-small;
@@ -9,13 +10,22 @@ footer {
   padding-bottom: 20px;
   color: $color-white;
 
-  img {
-    width: 10%;
-    height: auto;
+  h1 {
+    padding-bottom: 10px;
+    font: {
+      family: $logo-title-font;
+      size: $fontsize-regular;
+    }
   }
 
   i {
     padding-right: 10px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
   }
 
   a {

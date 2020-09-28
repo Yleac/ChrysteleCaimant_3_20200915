@@ -1,34 +1,30 @@
-
 //Sass color
-    $color-primary-1: #9356dc;
-    $color-primary-2: #ff79da;
-    $color-primary-3: #99e2d0;
+$color-primary-1: #9356dc;
+$color-primary-2: #ff79da;
+$color-primary-3: #99e2d0;
 
-    $color-white: white;
-    $color-bg:#E6E6FA;
-    $color-bg-footer: #353535;
-
-    
+$color-white: white;
+$color-bg: #f6f6f6;
+$color-bg-footer: #353535;
 
 //Fonts families
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap'); //src: fonts.google.com
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"); //src: fonts.google.com
 
-    $logo-title-font: "Shrikhand"; 
-    $txt-font: "Roboto", arial, sans-serif;
+$logo-title-font: "Shrikhand";
+$txt-font: "Roboto", arial, sans-serif;
 
 //sizes
-    $fontsize-regular : 1rem;
-    $logo-title-size : 1.75rem;
-    $fontsize-small : 0.75rem;
+$fontsize-regular: 1rem;
+$logo-title-size: 1.75rem;
+$fontsize-small: 0.75rem;
 
-//Titres 
-    $h2-font : $logo-title-font bold $logo-title-size;
-    $h3-font : $logo-title-font bold;
-    $h4-font : $txt-font $logo-title-size ;
+//Titres
+$h2-font: $logo-title-font bold $logo-title-size;
+$h3-font: $logo-title-font bold;
+$h4-font: $txt-font $logo-title-size;
 
 //Media-queries
-    $screen-sm-min: 576px;   // Small tablets and large smartphones (landscape view)
-    $screen-md-min: 768px;   // Small tablets (portrait view)  
-    $screen-lg-min: 992px;   // Tablets and small desktops 
-    $screen-xl-min: 1200px;  // Large tablets and desktops
-
+$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops

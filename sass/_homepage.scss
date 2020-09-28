@@ -18,8 +18,8 @@ html {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-    }//end homepage
-  }//end body
+    } //end homepage
+  } //end body
 
   /* Les titres */
   h1,
@@ -29,12 +29,12 @@ html {
     margin-block-end: 0;
   } //end les titres
 
-/* Aside : localisation + zone How it works */
+  /* Aside : localisation + zone How it works */
   aside {
     .localisation {
-      background-color: $color-primary-3;
+      background-color: darken($color: #f6f6f6, $amount: 05);
       padding: 2px;
-    }//end localisation
+    } //end localisation
 
     // zone Book the menu
     .btn_explore {
@@ -44,71 +44,115 @@ html {
       h2 {
         font: $h2-font;
         padding-top: 30px;
-        }//end h2
-      
-      p{
+      } //end h2
+
+      p {
         padding-top: 10px;
         padding-bottom: 15px;
-      }//end p
+      } //end p
 
-      a{
-          background-color: $color-primary-1;
-          background: linear-gradient(to left top, $color-primary-1, $color-primary-2);
-          border-radius: 10px;
-          color: $color-white;
-          font-size: $fontsize-regular;
-          width : 200px;
-          height: 75px;
-          box-sizing: border-box;
-          text-align: center;
-          padding: 7px;
-          text-decoration: none;
+      a {
+        background-color: $color-primary-1;
+        background: linear-gradient(
+          to left top,
+          $color-primary-1,
+          $color-primary-2
+        );
+        border-radius: 10px;
+        color: $color-white;
+        font-size: $fontsize-regular;
+        width: 200px;
+        height: 75px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 7px;
+        text-decoration: none;
 
-          &:hover{
-            background: linear-gradient(to left top, lighten($color-primary-1, 5), lighten($color-primary-2, 5));
-          }//end hover
-      }//end bouton cliquable ancre
-    }//end zone btn_explore
+        &:hover {
+          background: linear-gradient(
+            to left top,
+            lighten($color-primary-1, 5),
+            lighten($color-primary-2, 5)
+          );
+        } //end hover
+      } //end bouton cliquable ancre
+    } //end zone btn_explore
     //End zone Book the menu
 
-    //zone How it works
-    .how_it_works{
+    //Zone How it works
+    .how_it_works {
       padding-bottom: 15px;
 
-      h2{
+      h2 {
         padding-top: 20px;
         padding-bottom: 15px;
       }
 
-      ul{
-        
-        li{
+      .btn_zone_hiw {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn_hiw {
           background-color: $color-bg;
           border: 3px solid $color-bg;
           border-radius: 10px;
-          box-shadow: 0 5px 5px 0 lighten($color-primary-3, 12);
+          box-shadow: 0 5px 5px 0 darken($color: #f6f6f6, $amount: 10);
           padding-bottom: 1px;
           line-height: 2rem;
           margin-bottom: 20px;
           width: 300px;
-          list-style-type: none;//a modifier par numero personnalisés : voir si variable map fonctionne?
-          
-          
-         }//end li
-    }//end ul
-
-    }//end zone How it works
-
-  }//end aside
+        } //end button how it works
+      } //end btn_zone How it works
+    } //end zone How it works
+  } //end aside
 
   main {
     background-color: $color-bg;
 
-    img {
-      background-size: cover;
-      width: 300px;
-      height: 200px;
-    }//end img
-  }//end main
+    .restaurant {
+      position: relative;
+    }
 
-}//end html
+    .label_new {
+      position: absolute;
+      float: left;
+      right: 20%;
+      margin-top: 8px;
+
+      background-color: $color-primary-3;
+      padding: 4px 20px 4px 20px;
+      color: darken($color: $color-primary-3, $amount: 40%);
+    }
+    .restaurant_btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background-color: $color-white;
+      border-radius: 10px;
+      border: 3px solid $color-bg;
+      margin-bottom: 20px;
+
+      img {
+        width: 300px;
+        height: 200px;
+      }
+
+      .restaurant_label {
+        display: flex;
+        justify-content: space-between;
+
+        .heart {
+          flex: 1;
+          text-align: right;
+        }
+        .restaurant_name {
+          flex: 2;
+          text-align: left;
+          padding-left: 8px;
+        }
+      }
+    } //end restaurant
+  } //end main
+} //end html
