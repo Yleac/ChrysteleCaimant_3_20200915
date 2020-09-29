@@ -94,6 +94,11 @@ html {
         flex-direction: column;
         align-items: center;
 
+         li{
+            list-style: inside none;
+            background-color: $color-primary-1;
+          }
+
         .btn_hiw {
           background-color: $color-bg;
           border: 3px solid $color-bg;
@@ -103,8 +108,22 @@ html {
           line-height: 2rem;
           margin-bottom: 20px;
           width: 300px;
-        } //end button how it works
+          text-align: left;
+
+          i{
+            padding-left: 15px;
+            padding-right: 20px;
+          }
+
+  
+        } 
+
+       
+
+
       } //end btn_zone How it works
+
+
     } //end zone How it works
   } //end aside
 

@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  .header_page{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    i{
+      grid-column: 1;
+      padding-top: 20px;
+      color: black;
+    }
+
+    .menu_page_title{
+      grid-column: 2;
+    }
+  }//end header_page
+
+  .legal_notice{
+    text-align: center;
+    padding-top: 20px;
+    font-family: $txt-font;
+    line-height: 1.8rem;
+
+    .legal_notice_title{
+      padding-top: 30px;
+      padding-bottom: 60px;
+      font-size: $logo-title-size;
+    }
+
+    img{
+      padding-top: 20px;
+    }
+
+    font: {
+        size: 1em;
+        family: $txt-font;
+    }
+    
+    h3{
+      background-color: $color-white;
+      border: 3px solid $color-bg;
+      border-radius: 10px;
+      box-shadow: 0 5px 5px 0 darken($color: #f6f6f6, $amount: 10);
+      padding-bottom: 1px;
+      line-height: 2rem;
+      width: 90%;
+      margin: auto;
+    }
+
+    .legal-notice-bloc{
+      padding: 20px;
+      text-align: justify;
+    }
+  }//end legal-notice
+}//end body
