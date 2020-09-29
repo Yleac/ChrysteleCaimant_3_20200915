@@ -2,11 +2,10 @@ body{
   margin: 0;
   padding: 0;
 
-  
 
   .legal_notice{
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 10px 0;
     font-family: $txt-font;
     line-height: 1.8rem;
 
@@ -18,7 +17,9 @@ body{
 
     img{
       padding-top: 20px;
+      max-width: 100%;
     }
+    
 
     font: {
         size: 1em;

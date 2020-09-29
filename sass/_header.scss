@@ -8,17 +8,17 @@ header {
 }
 
 /*Header des autres pages du site*/
-  .header_page{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-   
-    i{
-      grid-column: 1;
-      padding-top: 20px;
-      color: black;
-    }
+.header_page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 20px;
 
-    .menu_page_title{
-      grid-column: 2;
-    }
-  }//end header_page
+  i {
+    grid-column: 1;
+    color: black;
+  }
+
+  .menu_page_title {
+    grid-column: 2;
+  }
+} //end header_page
