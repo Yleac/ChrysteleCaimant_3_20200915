@@ -2,20 +2,7 @@ body{
   margin: 0;
   padding: 0;
 
-  .header_page{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-   
-    i{
-      grid-column: 1;
-      padding-top: 20px;
-      color: black;
-    }
-
-    .menu_page_title{
-      grid-column: 2;
-    }
-  }//end header_page
+  
 
   .legal_notice{
     text-align: center;

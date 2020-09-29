@@ -1,4 +1,4 @@
-/*header*/
+/*header Homepage*/
 header {
   font: {
     family: $logo-title-font;
@@ -6,3 +6,19 @@ header {
   }
   text-align: center;
 }
+
+/*Header des autres pages du site*/
+  .header_page{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    i{
+      grid-column: 1;
+      padding-top: 20px;
+      color: black;
+    }
+
+    .menu_page_title{
+      grid-column: 2;
+    }
+  }//end header_page
