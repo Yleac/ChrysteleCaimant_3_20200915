@@ -1,31 +1,35 @@
 footer {
   background-color: $color-bg-footer;
   text-align: left;
+  width: 350px;
   font: {
     family: $txt-font;
     size: $fontsize-small;
   }
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: $color-white;
   line-height: 1.5rem;
 
   h1 {
+    padding-top: 20px;
     padding-bottom: 10px;
+    padding-left: 20px;
     font: {
       family: $logo-title-font;
-      size: $fontsize-regular*1.5;
+      size: $fontsize-regular;
     }
+    letter-spacing: 1.5px;
   }
 
   i {
     padding-right: 10px;
+    padding-left: 20px;
   }
 
   .links {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
   }
 
   a {
@@ -37,4 +41,5 @@ footer {
       text-decoration: underline;
     }
   }
+  
 }

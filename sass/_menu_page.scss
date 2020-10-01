@@ -1,9 +1,163 @@
-html {
-  font-size: 16px;
-
+html { 
+  
+  //Aspect général de la page
   body {
     .menu_page {
-      background-color: $color-bg;
-    }
-  }
-}
+      text-align: center;
+      width: 100%;
+      
+      h1,
+      h4 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+    } //end menu_page 
+ 
+  
+  .menu_title{
+      width: 350px;
+      height: 250px;
+      position: relative;
+      margin: auto;
+      
+      img{
+        width: 350px;
+        height: auto;
+        
+      }
+
+      .menu_title_label{
+        display: flex;
+        width: 100%;
+        background-color: $color-bg;
+        position: absolute;
+        bottom: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 25px 25px 0 0;
+        
+        h1{
+          text-align: left;
+          font: {
+            size: $logo-title-size*0.90;
+            family: $logo-title-font;
+          };
+          flex:2;
+          padding-left: 15px;
+        }
+
+        i{
+          flex: 1;
+          padding-top: 4px;
+          font-size: $logo-title-size*0.90;
+        }
+      } 
+  }//end zone menu_title
+
+  //zone du menu
+  .menu{
+    text-align: left;
+    background-color: $color-bg;
+    width: 350px;
+    margin: auto;
+    padding-bottom: 10px;
+    font: {
+      family: $txt-font;
+      size: $fontsize-regular;
+    };
+
+    .menu_wrapper{
+      h4{
+        padding-left: 15px;
+        span{
+          border-bottom: solid 2px $color-primary-3;
+          padding-bottom: 3px;
+        }
+      }
+      .menu_bloc{
+        display: flex;
+        background-color: $color-white;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px 0 darken($color: #f6f6f6, $amount: 10);
+        padding-bottom: 1px;
+        margin: 15px auto;
+        width: 320px;
+        text-align: left;
+
+        h5{
+          margin-block-start: 10px;
+          margin-block-end: 0;
+          font: {
+            size: $fontsize-regular;
+          };
+        }
+
+        .menu_bloc_dish{
+          flex: 2;
+          
+          padding-left: 10px;
+          font-size: $fontsize-small;
+
+          p{
+            line-height: normal;
+          }
+        }
+
+        .menu_bloc_price{
+          flex:1;
+          text-align: right;
+          padding-right: 10px;
+          padding-top: 25px ;
+        }
+      } //end menu_bloc
+    }//end menu_wrapper
+  }//end menu
+
+  //bouton order
+  .btn_order{
+    background-color: $color-bg;
+    width: 350px;
+    margin: auto;
+    padding-bottom: 70px;
+    padding-top: 70px;
+
+    font: {
+      family: $txt-font;
+      size: $fontsize-regular;
+    };
+  
+    a{
+      background-color: $color-primary-1;
+      background: linear-gradient(
+          to left top,
+          $color-primary-1,
+          $color-primary-2
+      );
+      border-radius: 50px;
+      box-shadow: 6px 3px 3px darken($color: $color-primary-1, $amount: 10);
+      color: $color-white;
+      height: 75px;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 13px 60px;
+      margin: auto;
+      border-width: 0;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.4s ease; //transition qui permet modif graduellement
+
+      &:hover {
+        background: linear-gradient(
+          to left top,
+          lighten($color-primary-1, 5),
+          lighten($color-primary-2, 5)
+          );
+        box-shadow: 12px 3px 3px darken($color: $color-primary-1, $amount: 15);
+        } //end hover
+    }//end a href
+  }//end btn_order
+
+  ;
+}//end body
+  
+}//end html
