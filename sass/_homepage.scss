@@ -6,14 +6,13 @@ html {
 
     .homepage {
       font: {
-        size: 1em;
+        size: 1rem;
         family: $txt-font;
       }
+      margin: auto;
+      max-width: 350px;
       line-height: 1.5;
       text-align: center;
-      width: 350px;
-      margin-left: auto;
-      margin-right: auto;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -39,6 +38,8 @@ html {
     .btn_explore {
       background-color: $color-bg;
       height: 200px;
+      padding-bottom: 30px;
+      margin: 0;
 
       h2 {
         font: $h2-font;
@@ -46,8 +47,7 @@ html {
       } //end h2
 
       p {
-        padding-top: 10px;
-        padding-bottom: 15px;
+        padding: 10px 5px 15px 5px;
       } //end p
 
       a {
@@ -84,6 +84,7 @@ html {
     //Zone How it works
     .how_it_works {
       padding-bottom: 15px;
+      margin: auto;
 
       h2 {
         padding-top: 20px;
@@ -103,7 +104,7 @@ html {
           padding-bottom: 1px;
           line-height: 2rem;
           margin-bottom: 20px;
-          width: 300px;
+          width: 270px;
           text-align: left;
           position: relative;
 

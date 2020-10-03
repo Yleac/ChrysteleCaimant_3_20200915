@@ -2,10 +2,12 @@ html {
   
   //Aspect général de la page
   body {
+    
     .menu_page {
       text-align: center;
-      width: 100%;
-      
+      margin: auto;
+      max-width: 350px;
+    
       h1,
       h4 {
         margin-block-start: 0;
@@ -15,7 +17,7 @@ html {
  
   
   .menu_title{
-      width: 350px;
+      max-width: 350px;
       height: 250px;
       position: relative;
       margin: auto;
@@ -23,7 +25,6 @@ html {
       img{
         width: 350px;
         height: auto;
-        
       }
 
       .menu_title_label{
@@ -58,7 +59,7 @@ html {
   .menu{
     text-align: left;
     background-color: $color-bg;
-    width: 350px;
+    max-width: 350px;
     margin: auto;
     padding-bottom: 10px;
     font: {
@@ -80,8 +81,8 @@ html {
         border-radius: 10px;
         box-shadow: 0 5px 5px 0 darken($color: #f6f6f6, $amount: 10);
         padding-bottom: 1px;
-        margin: 15px auto;
-        width: 320px;
+        margin: 15px 10px;
+        max-width: 320px;
         text-align: left;
 
         h5{
@@ -93,8 +94,7 @@ html {
         }
 
         .menu_bloc_dish{
-          flex: 2;
-          
+          flex: 2; 
           padding-left: 10px;
           font-size: $fontsize-small;
 
@@ -105,6 +105,7 @@ html {
 
         .menu_bloc_price{
           flex:1;
+          font-weight: bold;
           text-align: right;
           padding-right: 10px;
           padding-top: 25px ;
@@ -116,7 +117,7 @@ html {
   //bouton order
   .btn_order{
     background-color: $color-bg;
-    width: 350px;
+    max-width: 350px;
     margin: auto;
     padding-bottom: 70px;
     padding-top: 50px;

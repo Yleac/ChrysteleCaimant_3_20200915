@@ -1,8 +1,9 @@
 footer {
   background-color: $color-bg-footer;
   text-align: left;
-  width: 350px;
-  margin: auto;
+  max-width: 350px;
+  
+  
   font: {
     family: $txt-font;
     size: $fontsize-small;
