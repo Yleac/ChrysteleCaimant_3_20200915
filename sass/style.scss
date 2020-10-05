@@ -2,12 +2,12 @@
 @import "variables";
 @import "mixins";
 
-//import animations
-@import "animations";
-
 //imports styles
 @import "homepage";
 @import "header";
 @import "footer";
 @import "menu_page";
 @import "mentions_legales";
+
+//import animations
+@import "animations";
