@@ -1,0 +1,23 @@
+//animation sur les differentes Entrées, Plats, Desserts : arrivent en glissant du bas vers le haut avec un leger décalage ds le temps. Peuvent apparaitrent un par un ou par groupe.
+
+.menu_bloc{
+  transition: 1s;
+  animation: slide 10s;
+}
+
+@keyframes slide{
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+//coeur (bouton like) : au clic, il doit se remplir (possible de faire l'anim sur le :hover)
+
+//loading spinner, qd l'appli aura plus de menus. Qd on arrive sur la page d'acc : 1à3sec - couvre intégralité écran (design de notre choix)
+
+//clic sur le plat souhaité : cela fait apparaitre une petite coche à droite du plat. la coche doit coulisser de la droite vers la gauche (l'effet peut apparaitre au :hover au lieu du clic). Si l'intitulé du plat est trop long, il doit etre rogné avec des points de suspension (expl fourni)

@@ -2,7 +2,6 @@ html {
   
   //Aspect général de la page
   body {
-   
     
     .menu_page {
       text-align: center;
@@ -114,6 +113,10 @@ html {
       } //end menu_bloc
     }//end menu_wrapper
   }//end menu
+
+  .menu_bloc:hover{
+  transform: rotate(10deg);
+}
 
   //bouton order
   .btn_order{
