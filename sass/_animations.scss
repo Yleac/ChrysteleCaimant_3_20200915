@@ -1,25 +1,29 @@
 //coeur (bouton like) : au clic, il doit se remplir (possible de faire l'anim sur le :hover)
 
 .fa-heart:hover{
-  transition: 1s;
+  -webkit-transition: 0.5s color; //utilisation site autoprefixer
+  -o-transition: 0.5s color; //utilisation site autoprefixer
+  transition: 0.5s color;
   font-weight: bold;
   color: red;
 }
 
+
 //animation sur les differentes Entrées, Plats, Desserts : arrivent en glissant du bas vers le haut avec un leger décalage ds le temps. Peuvent apparaitrent un par un ou par groupe.
 
 .menu_bloc{
-  transition: 1s;
-  animation: slide 5s;
+  transition: 0.5s;
+  animation: slide 5s ease-in-out 1s;
+  
 }
 
 @keyframes slide{
   from {
-    transform: translateY(100px);
+    transform: translateY(30px);
     opacity: 0;
   }
   to{
-    transform: translateY(0);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
