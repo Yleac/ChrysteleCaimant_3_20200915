@@ -6,15 +6,15 @@
   transition: 0.5s color;
   font-weight: bold;
   color: red;
+  cursor: pointer;
 }
 
 
-//animation sur les differentes Entrées, Plats, Desserts : arrivent en glissant du bas vers le haut avec un leger décalage ds le temps. Peuvent apparaitrent un par un ou par groupe.
+//animation d'affichage des blocs : Entrées, Plats, Desserts. 
 
-.menu_bloc{
-  transition: 0.5s;
-  animation: slide 5s ease-in-out 1s;
-  
+.menu_wrapper {
+  animation: 1.2s slide ease-in-out;
+  animation-fill-mode: backwards; //le point de depart de l'animation se cale sur l'apparence keyframe from soit opacity 0
 }
 
 @keyframes slide{
@@ -26,6 +26,12 @@
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+@for $i from 1 through 3 { //définition de la boucle pour l'application du delai d'affichage en cascade
+    .menu_wrapper:nth-child(#{$i}n) {
+     animation-delay: #{$i * 0.75}s;
+    }
 }
 
 //clic sur le plat souhaité : cela fait apparaitre une petite coche à droite du plat. la coche doit coulisser de la droite vers la gauche (l'effet peut apparaitre au :hover au lieu du clic). Si l'intitulé du plat est trop long, il doit etre rogné avec des points de suspension (expl fourni)
