@@ -1,6 +1,6 @@
 //coeur (bouton like) : au clic, il doit se remplir (possible de faire l'anim sur le :hover)
 
-.fa-heart:hover{
+.fa-heart:hover {
   -webkit-transition: 0.5s color; //utilisation site autoprefixer
   -o-transition: 0.5s color; //utilisation site autoprefixer
   transition: 0.5s color;
@@ -9,32 +9,87 @@
   cursor: pointer;
 }
 
-
-//animation d'affichage des blocs : Entrées, Plats, Desserts. 
+//animation d'affichage des blocs : Entrées, Plats, Desserts.
 
 .menu_wrapper {
   animation: 1.2s slide ease-in-out;
-  animation-fill-mode: backwards; //le point de depart de l'animation se cale sur l'apparence keyframe from soit opacity 0
+  animation-fill-mode: backwards; //point de depart de l'animation se cale sur l'apparence keyframe from soit opacity 0
 }
 
-@keyframes slide{
+@keyframes slide {
   from {
     transform: translateY(30px);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0px);
     opacity: 1;
   }
 }
 
-@for $i from 1 through 3 { //définition de la boucle pour l'application du delai d'affichage en cascade
-    .menu_wrapper:nth-child(#{$i}n) {
-     animation-delay: #{$i * 0.75}s;
-    }
+@for $i from 1 through 3 {
+  //définition de la boucle pour l'application du delai d'affichage en cascade
+  .menu_wrapper:nth-child(#{$i}n) {
+    animation-delay: #{$i * 0.75}s;
+  }
 }
 
-//clic sur le plat souhaité : cela fait apparaitre une petite coche à droite du plat. la coche doit coulisser de la droite vers la gauche (l'effet peut apparaitre au :hover au lieu du clic). Si l'intitulé du plat est trop long, il doit etre rogné avec des points de suspension (expl fourni)
+//clic sur le plat souhaité : cela fait apparaitre une petite coche à droite du plat. la coche doit coulisser de la droite vers la gauche.
 
+.menu_bloc {
+  cursor: pointer;
+
+  .menu_bloc_price {
+    display: flex;
+
+    .price {
+      flex: 1;
+    }
+
+    .check {
+      flex: 1;
+      background-color: $color-primary-3;
+      border-radius: 0 10px 10px 0;
+      color: white;
+      text-align: center;
+      font-size: $logo-title-size;
+      justify-content: center;
+      padding-top: 20px;
+      padding-right: 0;
+      overflow: hidden;
+      display: none;
+    }
+  }
+
+  & :hover {
+    .check {
+      display: block;
+      animation: 1s checkSlide backwards;
+      opacity: 1;
+
+      .fa-check-circle {
+        animation: checkRotation 1s linear;
+      }
+    }
+  }
+} //end menu_bloc
+
+@keyframes checkSlide {
+  from {
+    transform: translateX(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes checkRotation {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 //loading spinner, qd l'appli aura plus de menus. Qd on arrive sur la page d'acc : 1à3sec - couvre intégralité écran (design de notre choix)

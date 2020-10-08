@@ -2,9 +2,7 @@ footer {
   background-color: $color-bg-footer;
   text-align: left;
   max-width: 350px;
-  
-  
-  
+
   font: {
     family: $txt-font;
     size: $fontsize-small;
@@ -43,5 +41,5 @@ footer {
         text-decoration: underline;
       }
     }
-  }//end links
+  } //end links
 }
