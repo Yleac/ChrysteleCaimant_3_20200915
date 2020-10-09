@@ -91,9 +91,37 @@
   }
 }
 
-//--- ANIMATION Loading Spinner --- En cours : modifs non prisent en compte... pkoi ????
-.fa-spin{
-  color: $color-primary-3;
+//--- ANIMATION Loading Spinner --- En cours 
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 20px solid violet;
+  border-right: 20px solid aqua;
+  border-bottom: 20px solid pink;
+  width: 100vw;
+  height: 100vh;
+  
+
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  animation: 2s spin linear ;
+  -webkit-animation: spin 2s linear forwards;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg);
+    opacity: 1;
+
+   }
+  100% { 
+    transform: rotate(360deg);
+    opacity: 0; 
+  }
 }
 
 
