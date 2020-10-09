@@ -1,4 +1,4 @@
-//coeur (bouton like) : au clic, il doit se remplir (possible de faire l'anim sur le :hover)
+//--- ANIMATION COEUR --- (bouton like) : au clic, il doit se remplir (possible de faire l'anim sur le :hover)
 
 .fa-heart:hover {
   -webkit-transition: 0.5s color; //utilisation site autoprefixer
@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-//animation d'affichage des blocs : Entrées, Plats, Desserts.
+//--- ANIMATION MENU --- Affichage des blocs : Entrées, Plats, Desserts.
 
 .menu_wrapper {
   animation: 1.2s slide ease-in-out;
@@ -34,8 +34,7 @@
   }
 }
 
-//clic sur le plat souhaité : cela fait apparaitre une petite coche à droite du plat. la coche doit coulisser de la droite vers la gauche.
-
+//--- ANIMATION CHECK --- Au clic sur le plat souhaité : cela fait apparaitre une petite coche à droite du plat. 
 .menu_bloc {
   cursor: pointer;
 
@@ -92,4 +91,4 @@
   }
 }
 
-//loading spinner, qd l'appli aura plus de menus. Qd on arrive sur la page d'acc : 1à3sec - couvre intégralité écran (design de notre choix)
+
