@@ -70,6 +70,9 @@
         animation: checkRotation 1s linear;
       }
     }
+    .price{
+      animation: 2s checkSlide backwards;
+    }
   }
 } //end menu_bloc
 
