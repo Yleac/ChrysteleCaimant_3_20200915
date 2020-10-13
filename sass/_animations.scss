@@ -101,23 +101,39 @@
 
 //--- ANIMATION Loading Spinner --- 
 
+.homepage{
+  animation: 2.7s show;
+}
 
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 15px solid $color-primary-1;
-  border-right: 15px solid $color-primary-3;
-  border-bottom: 15px solid $color-primary-2;
-  width: 90vw;
-  height: 70vh;
-  
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  75%{
+     opacity: 0;
+  }
+  to {  
+     opacity: 1;
+     
+  }
+}
 
+.loader{
+  font-size: 6rem;
+  color: $color-primary-1;
+  width: 90%;
+  height: 90%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 5%;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
  
-  animation: 2s spin linear ;
-  -webkit-animation: spin 2s linear forwards;
+  animation: 2.5s spin linear forwards;
+  -webkit-animation: spin 2.5s linear forwards;
 }
 
 
@@ -125,7 +141,7 @@
   0% { 
     -webkit-transform: rotate(0deg); 
             transform: rotate(0deg);
-   }
+    }
   100% { 
     -webkit-transform: rotate(360deg); 
             transform: rotate(360deg);

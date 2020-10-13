@@ -25,8 +25,21 @@ $h3-font: $logo-title-font bold; //homepage : nom des retaurants
 $h4-font: $txt-font $fontsize-regular; //nom des catégories : entrées, plat, dessert
 $h5-font: $txt-font $fontsize-regular bold; //nom des plats
 
-//Media-queries - map
-$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
-$screen-md-min: 768px; // Small tablets (portrait view)
-$screen-lg-min: 992px; // Tablets and small desktops
-$screen-xl-min: 1200px; // Large tablets and desktops
+//---- Media-queries ---- 
+$breakpoints: (  //map breakpoints
+  sm: 576px,    // Small tablets and large smartphones (landscape view)
+  md: 768px,    // Small tablets (portrait view)
+  lg: 992px,    // Tablets and small desktops
+  xl: 1200px    // Large tablets and desktops
+);
+
+
+@mixin bp($breakpoint) { // Mixin pour appeler les breakpoint facilement
+    @if map-has-key($breakpoints, $breakpoint) {
+        $value: map-get($breakpoints, $breakpoint);
+         
+        @media screen and (min-width: $value) {
+            @content;
+        }
+    }
+}
