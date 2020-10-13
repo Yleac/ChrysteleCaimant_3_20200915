@@ -105,6 +105,17 @@
   animation: 2.7s show;
 }
 
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  75%{
+     opacity: 0;
+  }
+  to {  
+     opacity: 1;
+  }
+}
 @keyframes show {
   from {
     opacity: 0;
@@ -114,7 +125,6 @@
   }
   to {  
      opacity: 1;
-     
   }
 }
 
