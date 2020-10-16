@@ -1,13 +1,35 @@
 //--- ANIMATION COEUR --- (bouton like) : au clic, il doit se remplir (possible de faire l'anim sur le :hover)
+//superposition de 2 coeurs fontawesome : 1vide+1plein puis animation au hover pour remplissage
 
-.fa-heart:hover {
-  -webkit-transition: 0.5s color; //utilisation site autoprefixer
-  -o-transition: 0.5s color; //utilisation site autoprefixer
-  transition: 0.5s color;
-  font-weight: bold;
-  color: red;
+.heart {
   cursor: pointer;
+  position: relative;
 }
+
+.heart1 {
+  position: absolute;
+}
+
+.heart2 {
+  z-index: 999;
+  color : #FF0000;
+  opacity: 0;   
+} 
+
+.heart2:hover {
+  animation: 0.5s filling linear forwards;
+}
+  
+@keyframes filling {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+ 
 
 //--- ANIMATION MENU --- Affichage des blocs : Entrées, Plats, Desserts.
 
@@ -33,6 +55,8 @@
     animation-delay: #{$i * 0.75}s;
   }
 }
+
+
 
 //--- ANIMATION CHECK --- Au clic sur le plat souhaité : cela fait apparaitre une petite coche à droite du plat. 
 .menu_bloc {
@@ -61,17 +85,17 @@
   }
 
   & :hover {
-    .check {
+    .check { //zone check contenant icone glisse
       display: block;
       animation: 2s checkSlide backwards;
       opacity: 1;
 
-      .fa-check-circle {
-        animation: checkRotation 1s linear;
+      .fa-check-circle { //icone tourne
+        animation: 1s checkRotation linear;
       }
     }
-    .price{
-      animation: 2s checkSlide backwards;
+    .price p{ //le prix glisse 
+      animation: 0.5s checkSlide;
     }
   }
 } //end menu_bloc
@@ -102,10 +126,13 @@
   }
 }
 
+
+
 //--- ANIMATION Loading Spinner --- 
+//homepage se cache un moment pendant loader puis apparait et loader disparait
 
 .homepage{
-  animation: 2.7s show;
+  animation: 2.7s show; //disparition apparition homepage
 }
 
 @-webkit-keyframes show {
@@ -145,7 +172,7 @@
   justify-content: center;
   align-items: center;
  
-  animation: 2.5s spin linear forwards;
+  animation: 2.5s spin linear forwards; //rotation loader
   -webkit-animation: spin 2.5s linear forwards;
 }
 
