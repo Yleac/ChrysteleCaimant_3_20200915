@@ -13,7 +13,11 @@ html {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-    } //end homepage
+
+      @include bp(lg) { //mediaQuery pour écran large
+        max-width: 100%;
+      } 
+    }//end homepage
   } //end body
 
   /* Les titres */
@@ -80,8 +84,12 @@ html {
 
     //Zone How it works
     .how_it_works {
-      padding-bottom: 15px;
       margin: auto;
+      padding-bottom: 15px;
+
+      @include bp(lg) { //media-query pour écran desktop
+          padding-bottom: 40px;  
+        }
 
       h2 {
         padding-top: 20px;
@@ -92,6 +100,11 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include bp(lg) {  //media-query pour écran desktop
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
 
         .btn_hiw {
           background-color: $color-bg;

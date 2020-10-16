@@ -1,5 +1,6 @@
 //imports variables - mixins - fonctions
 @import "variables";
+@import "mixins";
 
 //imports styles
 @import "homepage";
@@ -7,8 +8,6 @@
 @import "footer";
 @import "menu_page";
 @import "mentions_legales";
-@import "mediaqueries";
-
 
 //imports animations
 @import "animations";

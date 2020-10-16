@@ -3,6 +3,11 @@ footer {
   text-align: left;
   max-width: 350px;
 
+  @include bp(lg) { //mediaQuery pour écran large
+        max-width: 100%;
+        text-align: center;
+      } 
+
   font: {
     family: $txt-font;
     size: $fontsize-small;
@@ -31,6 +36,11 @@ footer {
     flex-direction: column;
     padding-left: 20px;
     padding-bottom: 20px;
+
+    @include bp(lg) { //mediaQuery pour écran large
+        flex-direction: row;
+        justify-content: space-evenly;
+      } 
 
     a {
       padding-right: 10px;

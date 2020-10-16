@@ -3,6 +3,9 @@ body {
     text-align: center;
     margin: auto;
     max-width: 350px;
+    @include bp(lg) { //mediaQuery pour écran large
+        max-width: 100%;
+      } 
 
     .legal_notice {
       padding: 20px 10px 0;
@@ -27,15 +30,19 @@ body {
       h3 {
         background-color: $color-white;
         border-radius: 50px;
-        box-shadow: 0 5px 5px 0 darken($color: #f6f6f6, $amount: 10);
+        box-shadow: 0 5px 5px 0 darken($color: #f6f6f6, $amount: 20);
         padding-bottom: 1px;
         line-height: 2rem;
         text-align: center;
         margin: auto;
+
+        @include bp(lg) { //mediaQuery pour écran large
+        width: 30%;
+        } 
       }
 
       .legal_notice_bloc {
-        padding: 15px 20px;
+        padding: 20px;
         text-align: justify;
         line-height: 1.8rem;
 
@@ -43,6 +50,11 @@ body {
           margin-block-end: 0;
         }
       } //end legal_notice_bloc
+
+      hr{
+        height: 40px;
+        border: none;
+      }
     } //end main
   } //end legal_notice_page
 } //end body
