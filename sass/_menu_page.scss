@@ -6,6 +6,10 @@ html {
       margin: auto;
       max-width: 350px;
 
+      @include bp(lg) { //mediaQuery pour écran large
+        max-width: 100%;
+      } 
+
       h1,
       h4 {
         margin-block-start: 0;
@@ -22,6 +26,10 @@ html {
       img {
         width: 350px;
         height: auto;
+
+        @include bp(lg) { //mediaQuery pour écran large
+          border-radius: 25% 25% 0 0;
+        } 
       }
 
       .menu_title_label {
@@ -114,7 +122,8 @@ html {
               padding-top: 25px;
             }
           }
-        } //end menu_bloc
+        } //end menu_bloc 
+        
       } //end menu_wrapper
     } //end menu
 
@@ -161,5 +170,6 @@ html {
         } //end hover
       } //end a href
     } //end btn_order
+
   } //end body
 } //end html

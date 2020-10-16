@@ -198,5 +198,21 @@ html {
         }
       } //end restaurant_label
     } //end restaurant_btn
+
+    
+    @include bp(lg) { //mediaQuery pour écran large
+      #restaurant_list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;  
+      }
+
+      h2{
+        padding-top: 20px;
+      }
+    }  
+    
   } //end main
 } //end html
