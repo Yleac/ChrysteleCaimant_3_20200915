@@ -173,8 +173,8 @@
 //homepage se cache un moment pendant loader puis apparait et loader disparait
 
 .homepage{
-  -webkit-animation: 2.7s show; //disparition apparition homepage
-          animation: 2.7s show;
+  -webkit-animation: 1.9s show; //disparition apparition homepage
+          animation: 1.9s show;
 }
 
 @-webkit-keyframes show {
@@ -222,8 +222,8 @@
       -ms-flex-align: center;
           align-items: center;
  
-  animation: 2.5s spin linear forwards; //rotation du loader
-  -webkit-animation: spin 2.5s linear forwards;
+  animation: 2s spin linear forwards; //rotation du loader
+  -webkit-animation: spin 2s linear forwards;
 }
 
 

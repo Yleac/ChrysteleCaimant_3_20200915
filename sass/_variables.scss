@@ -34,12 +34,3 @@ $breakpoints: (  //map breakpoints
 );
 
 
-@mixin bp($breakpoint) { // Mixin pour appeler les breakpoint facilement
-    @if map-has-key($breakpoints, $breakpoint) {
-        $value: map-get($breakpoints, $breakpoint);
-         
-        @media screen and (min-width: $value) {
-            @content;
-        }
-    }
-}

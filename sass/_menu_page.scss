@@ -21,6 +21,9 @@ html {
       height: 250px;
       position: relative;
       margin: auto;
+      @include bp(lg) { //mediaQuery pour écran large
+        padding-top: 20px;
+      } 
 
       img {
         width: 350px;
