@@ -78,6 +78,14 @@ html {
         size: $fontsize-regular;
       }
 
+      @include bp(lg) {
+        max-width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding-top: 60px;
+      }
+
       .menu_wrapper {
         h4 {
           padding-left: 15px;
@@ -125,11 +133,9 @@ html {
             }
           }
         } //end menu_bloc 
-
       } //end menu_wrapper
-    } //end menu
 
-    
+    } //end menu
 
   } //end body
 } //end html

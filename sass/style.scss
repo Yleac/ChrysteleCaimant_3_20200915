@@ -1,9 +1,16 @@
 //imports variables - mixins - fonctions
-@import "utils";
+@import "utils/mixins";
+@import "utils/variables";
 
 //imports styles
-@import "layout";
-@import "components";
-@import "pages";
-
-
+@import "layout/footer";
+@import "layout/header";
+@import "components/btn-explore";
+@import "components/btn-order";
+@import "components/heart-anim";
+@import "components/homepage-loader";
+@import "components/menu-arrivee-anim";
+@import "components/menu-check-anim.scss";
+@import "pages/homepage";
+@import "pages/menu_page";
+@import "pages/mentions_legales";

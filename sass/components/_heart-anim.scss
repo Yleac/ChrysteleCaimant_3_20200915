@@ -23,26 +23,20 @@
   -webkit-text-fill-color: transparent;
 } 
 
-.heart2:hover {
-  -webkit-animation: 0.5s filling linear forwards;
-          animation: 0.5s filling linear forwards;
+.heart .heart2 {
+  opacity: 0;
+  transition: opacity 0.3s;
 }
-  
-@-webkit-keyframes filling {
-  from {
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
+
+.heart:hover .heart2 {
+  opacity: 1;
 }
-  
-@keyframes filling {
-  from {
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
+
+.heart .heart1 {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.heart:hover .heart1 {
+  opacity: 0;
 }
 
