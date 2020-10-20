@@ -1,0 +1,42 @@
+//--- ANIMATION MENU --- Affichage des blocs : Entrées, Plats, Desserts.
+
+.menu_wrapper {
+  -webkit-animation: 1.2s menuSlide ease-in-out;
+          animation: 1.2s menuSlide ease-in-out;
+  -webkit-animation-fill-mode: backwards; //point de depart de l'animation se cale sur l'apparence keyframe from soit opacity 0
+          animation-fill-mode: backwards; 
+}
+
+@-webkit-keyframes menuSlide {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes menuSlide {
+  from {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@for $i from 1 through 3 {
+  //définition de la boucle pour l'application du delai d'affichage en cascade
+  .menu_wrapper:nth-child(#{$i}n) {
+    animation-delay: #{$i * 0.75}s;
+  }
+}
+

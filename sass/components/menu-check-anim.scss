@@ -1,0 +1,83 @@
+//--- ANIMATION CHECK --- Au clic sur le plat souhaité : cela fait apparaitre une petite coche à droite du plat. 
+.menu_bloc {
+  cursor: pointer;
+
+  .menu_bloc_price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    .price {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    }
+
+    .check { //zone contenant icone tournant
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      background-color: $color-primary-3;
+      border-radius: 0 10px 10px 0;
+      color: white;
+      text-align: center;
+      font-size: $logo-title-size;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-top: 20px;
+      padding-right: 0;
+      overflow: hidden;
+      display: none;
+    }
+  }
+
+  & :hover {
+    .check { //zone check glisse
+      display: block;
+      -webkit-animation: 2s checkSlide backwards;
+              animation: 2s checkSlide backwards;
+      opacity: 1;
+
+      .fa-check-circle { //icone tourne
+        -webkit-animation: 1s checkRotation linear; 
+                animation: 1s checkRotation linear;
+      }
+    }
+    .price p{  // prix glisse
+      -webkit-animation: 0.5s checkSlide;  
+              animation: 0.5s checkSlide;
+    }
+  }
+} //end menu_bloc
+
+@keyframes checkSlide {
+  from {
+    -webkit-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+            transform: translateX(5px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes checkRotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes checkRotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+

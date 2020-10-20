@@ -1,0 +1,48 @@
+//--- ANIMATION COEUR --- (bouton like) : au clic, il doit se remplir (possible de faire l'anim sur le :hover)
+//superposition de 2 coeurs fontawesome : 1vide+1plein puis animation au hover pour remplissage
+
+.heart {
+  cursor: pointer;
+  position: relative;
+}
+
+.heart1 {
+  position: absolute;
+}
+
+.heart2 {
+  z-index: 999;
+  opacity: 0;
+  background: linear-gradient(
+          to left top,
+          $color-primary-2 40%,
+          $color-primary-1,
+        );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
+.heart2:hover {
+  -webkit-animation: 0.5s filling linear forwards;
+          animation: 0.5s filling linear forwards;
+}
+  
+@-webkit-keyframes filling {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+  
+@keyframes filling {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+

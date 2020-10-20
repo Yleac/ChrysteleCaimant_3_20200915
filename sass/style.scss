@@ -1,14 +1,10 @@
 //imports variables - mixins - fonctions
-@import "variables";
-@import "mixins";
+@import "utils";
+
 
 //imports styles
-@import "homepage";
-@import "header";
-@import "footer";
-@import "menu_page";
-@import "mentions_legales";
+@import "layout";
+@import "components";
+@import "pages";
 
-//imports animations
-@import "animations";
 
