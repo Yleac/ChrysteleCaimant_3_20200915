@@ -25,8 +25,8 @@ $h3-font: $logo-title-font bold; //homepage : nom des retaurants
 $h4-font: $txt-font $fontsize-regular; //nom des catégories : entrées, plat, dessert
 $h5-font: $txt-font $fontsize-regular bold; //nom des plats
 
-//---- Media-queries ---- 
-$breakpoints: (  //map breakpoints
+//---- Media-queries : map breakpoints ---- 
+$breakpoints: (  
   sm: 576px,    // Small tablets and large smartphones (landscape view)
   md: 768px,    // Small tablets (portrait view)
   lg: 992px,    // Tablets and small desktops
