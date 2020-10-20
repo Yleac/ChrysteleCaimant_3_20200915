@@ -1,19 +1,20 @@
 //--- ANIMATION MENU --- Affichage des blocs : Entrées, Plats, Desserts.
+//on part de opacity 0 et 30px plus bas -> position finale et opacity 1 (animation menuSlide)
 
 .menu_wrapper {
   -webkit-animation: 1.2s menuSlide ease-in-out;
           animation: 1.2s menuSlide ease-in-out;
-  -webkit-animation-fill-mode: backwards; //point de depart de l'animation se cale sur l'apparence keyframe from soit opacity 0
+  -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards; 
 }
 
-@-webkit-keyframes menuSlide {
-  from {
+@-webkit-keyframes menuSlide { 
+  from { 
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
     opacity: 0;
   }
-  to {
+  to { 
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
@@ -34,9 +35,8 @@
 }
 
 @for $i from 1 through 3 {
-  //définition de la boucle pour l'application du delai d'affichage en cascade
+  //définition de la boucle pour l'application du delai d'affichage en cascade : Pour chaque element enfant respecter un delai avant de lancer l'anim.
   .menu_wrapper:nth-child(#{$i}n) {
     animation-delay: #{$i * 0.75}s;
   }
 }
-

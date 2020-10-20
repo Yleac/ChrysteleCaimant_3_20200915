@@ -1,4 +1,4 @@
-/*header Homepage*/
+//HEADER - Homepage ---//
 header {
   font: {
     family: $logo-title-font;
@@ -8,7 +8,7 @@ header {
   margin: auto;
 }
 
-/*Header des autres pages du site*/
+// --- HEADER - Autres pages du Site ---//
 .header_page {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

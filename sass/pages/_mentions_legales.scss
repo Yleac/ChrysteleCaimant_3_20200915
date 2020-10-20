@@ -3,13 +3,18 @@ body {
     text-align: center;
     margin: auto;
     max-width: 350px;
+
     @include bp(lg) { //mediaQuery pour écran large
         max-width: 100%;
-      } 
+    } 
 
     .legal_notice {
       padding: 20px 10px 0;
       font-family: $txt-font;
+      font: {
+        size: 1rem;
+        family: $txt-font;
+      }
 
       img {
         padding-top: 20px;
@@ -21,12 +26,7 @@ body {
         padding-bottom: 60px;
         font-size: $logo-title-size;
       }
-
-      font: {
-        size: 1rem;
-        family: $txt-font;
-      }
-
+      
       h3 {
         background-color: $color-white;
         border-radius: 50px;
@@ -51,10 +51,6 @@ body {
         }
       } //end legal_notice_bloc
 
-      hr{
-        height: 40px;
-        border: none;
-      }
-    } //end main
+    } //end legal_notice
   } //end legal_notice_page
 } //end body
