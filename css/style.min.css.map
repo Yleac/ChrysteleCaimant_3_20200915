@@ -12,7 +12,7 @@
         "../sass/components/_heart-like.scss",
         "../sass/components/_homepage-loader.scss",
         "../sass/components/_menu-arrivee-anim.scss",
-        "../sass/components/menu-check-anim.scss",
+        "../sass/components/_menu-check-anim.scss",
         "../sass/pages/_homepage.scss",
         "../sass/pages/_menu_page.scss",
         "../sass/pages/_mentions_legales.scss"
