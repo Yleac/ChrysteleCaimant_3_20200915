@@ -1,35 +1,35 @@
-//--- ANIMATION Loading Spinner --- 
+//--- ANIMATION Loading Spinner ---
 //homepage se cache un moment pendant loader puis apparait et loader disparait
 
-.homepage{
+.homepage {
   -webkit-animation: 1.9s show; //disparition apparition homepage
-          animation: 1.9s show;
+  animation: 1.9s show;
 }
 
 @-webkit-keyframes show {
   from {
     opacity: 0;
   }
-  75%{
-     opacity: 0;
+  75% {
+    opacity: 0;
   }
-  to {  
-     opacity: 1;
+  to {
+    opacity: 1;
   }
 }
 @keyframes show {
   from {
     opacity: 0;
   }
-  75%{
-     opacity: 0;
+  75% {
+    opacity: 0;
   }
-  to {  
-     opacity: 1;
+  to {
+    opacity: 1;
   }
 }
 
-.loader{
+.loader {
   font-size: 6rem;
   color: $color-primary-1;
   width: 90%;
@@ -44,37 +44,36 @@
   display: flex;
 
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
- 
+  -ms-flex-align: center;
+  align-items: center;
+
   animation: 2s spin linear forwards; //rotation du loader
   -webkit-animation: spin 2s linear forwards;
 }
 
-
 @-webkit-keyframes spin {
-  0% { 
-    -webkit-transform: rotate(0deg); 
-            transform: rotate(0deg);
-    }
-  100% { 
-    -webkit-transform: rotate(360deg); 
-            transform: rotate(360deg);
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
     visibility: hidden;
   }
 }
 @keyframes spin {
-  0% { 
-    -webkit-transform: rotate(0deg); 
-            transform: rotate(0deg);
-   }
-  100% { 
-    -webkit-transform: rotate(360deg); 
-            transform: rotate(360deg);
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
     visibility: hidden;
   }
 }

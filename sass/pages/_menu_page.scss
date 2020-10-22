@@ -5,9 +5,10 @@ html {
       text-align: center;
       margin: auto;
       max-width: 350px;
-      @include bp(lg) { //mediaQuery pour écran large
+      @include bp(lg) {
+        //mediaQuery pour écran large
         max-width: 100%;
-      } 
+      }
 
       h1,
       h4 {
@@ -21,17 +22,19 @@ html {
       height: 250px;
       position: relative;
       margin: auto;
-      @include bp(lg) { //mediaQuery pour écran large
+      @include bp(lg) {
+        //mediaQuery pour écran large
         padding-top: 20px;
-      } 
+      }
 
       img {
         width: 350px;
         height: auto;
 
-        @include bp(lg) { //mediaQuery pour écran large
+        @include bp(lg) {
+          //mediaQuery pour écran large
           border-radius: 25% 25% 0 0;
-        } 
+        }
       }
 
       .menu_title_label {
@@ -60,7 +63,7 @@ html {
           font-size: $logo-title-size * 0.9;
         }
 
-        .fa-heart{
+        .fa-heart {
           padding-right: 45px;
         }
       }
@@ -133,9 +136,8 @@ html {
               padding-top: 25px;
             }
           }
-        } //end menu_bloc 
+        } //end menu_bloc
       } //end menu_wrapper
-
     } //end menu
   } //end body
 } //end html

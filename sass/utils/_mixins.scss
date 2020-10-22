@@ -1,18 +1,18 @@
-//--- mixin pour Media Queries 
-  
-@mixin bp($breakpoint) { 
-    // Mixin pour appeler les breakpoints facilement avec utilisation de la map créee dans _variables
-    @if map-has-key($breakpoints, $breakpoint) {
-        $value: map-get($breakpoints, $breakpoint);
-         
-        @media screen and (min-width: $value) {
-            @content;
-        }
+//--- mixin pour Media Queries
+
+@mixin bp($breakpoint) {
+  // Mixin pour appeler les breakpoints facilement avec utilisation de la map créee dans _variables
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+
+    @media screen and (min-width: $value) {
+      @content;
     }
+  }
 }
 //pour reutiliser la mixin, on va utiliser par expl:
 //.homepage{
- // @include bp(lg) {
- //   max-width: 100%;
- // }
+// @include bp(lg) {
+//   max-width: 100%;
+// }
 //}

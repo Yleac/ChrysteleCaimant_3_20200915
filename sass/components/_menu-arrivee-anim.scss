@@ -3,20 +3,20 @@
 
 .menu_wrapper {
   -webkit-animation: 1.2s menuSlide ease-in-out;
-          animation: 1.2s menuSlide ease-in-out;
+  animation: 1.2s menuSlide ease-in-out;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards; 
+  animation-fill-mode: backwards;
 }
 
-@-webkit-keyframes menuSlide { 
-  from { 
+@-webkit-keyframes menuSlide {
+  from {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
   }
-  to { 
+  to {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -24,12 +24,12 @@
 @keyframes menuSlide {
   from {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
   }
   to {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }

@@ -1,32 +1,31 @@
- // zone Book the menu : bouton non fonctionnel en mode maquette
-    .btn_explore {
-      a {
-        background-color: $color-primary-1;
-        background: linear-gradient(
-          to left top,
-          $color-primary-1,
-          $color-primary-2
-        );
-        border-radius: 10px;
-        box-shadow: 6px 3px 3px darken($color: $color-primary-1, $amount: 10);
-        color: $color-white;
-        font-size: $fontsize-regular;
-        width: 200px;
-        height: 75px;
-        box-sizing: border-box;
-        text-align: center;
-        padding: 7px;
-        text-decoration: none;
-        transition: all 0.4s ease; //transition qui permet modif graduellement
+// zone Book the menu : bouton non fonctionnel en mode maquette
+.btn_explore {
+  a {
+    background-color: $color-primary-1;
+    background: linear-gradient(
+      to left top,
+      $color-primary-1,
+      $color-primary-2
+    );
+    border-radius: 10px;
+    box-shadow: 6px 3px 3px darken($color: $color-primary-1, $amount: 10);
+    color: $color-white;
+    font-size: $fontsize-regular;
+    width: 200px;
+    height: 75px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    transition: all 0.4s ease; //transition qui permet modif graduellement
 
-        &:hover {
-          background: linear-gradient(
-            to left top,
-            lighten($color-primary-1, 5),
-            lighten($color-primary-2, 5)
-          );
-          box-shadow: 12px 3px 3px darken($color: $color-primary-1, $amount: 15);
-        } //end hover
-        
-      } //end bouton cliquable ancre
-    }//end btn_explore
+    &:hover {
+      background: linear-gradient(
+        to left top,
+        lighten($color-primary-1, 5),
+        lighten($color-primary-2, 5)
+      );
+      box-shadow: 12px 3px 3px darken($color: $color-primary-1, $amount: 15);
+    } //end hover
+  } //end bouton cliquable ancre
+} //end btn_explore

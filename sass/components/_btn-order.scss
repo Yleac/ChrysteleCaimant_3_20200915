@@ -1,43 +1,43 @@
 //bouton order
-    .btn_order {
-      background-color: $color-bg;
-      max-width: 350px;
-      margin: auto;
-      padding-bottom: 70px;
-      padding-top: 50px;
+.btn_order {
+  background-color: $color-bg;
+  max-width: 350px;
+  margin: auto;
+  padding-bottom: 70px;
+  padding-top: 50px;
 
-      font: {
-        family: $txt-font;
-        size: $fontsize-regular;
-      }
+  font: {
+    family: $txt-font;
+    size: $fontsize-regular;
+  }
 
-      a {
-        background-color: $color-primary-1;
-        background: linear-gradient(
-          to left top,
-          $color-primary-1,
-          $color-primary-2
-        );
-        border-radius: 50px;
-        box-shadow: 6px 3px 3px darken($color: $color-primary-1, $amount: 10);
-        color: $color-white;
-        height: 75px;
-        box-sizing: border-box;
-        text-align: center;
-        padding: 13px 60px;
-        margin: auto;
-        border-width: 0;
-        text-align: center;
-        text-decoration: none;
-        transition: all 0.4s ease; //transition qui permet modif graduellement
+  a {
+    background-color: $color-primary-1;
+    background: linear-gradient(
+      to left top,
+      $color-primary-1,
+      $color-primary-2
+    );
+    border-radius: 50px;
+    box-shadow: 6px 3px 3px darken($color: $color-primary-1, $amount: 10);
+    color: $color-white;
+    height: 75px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 13px 60px;
+    margin: auto;
+    border-width: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease; //transition qui permet modif graduellement
 
-        &:hover {
-          background: linear-gradient(
-            to left top,
-            lighten($color-primary-1, 5),
-            lighten($color-primary-2, 5)
-          );
-          box-shadow: 12px 3px 3px darken($color: $color-primary-1, $amount: 15);
-        } //end hover
-      } //end a href
-    } //end btn_order
+    &:hover {
+      background: linear-gradient(
+        to left top,
+        lighten($color-primary-1, 5),
+        lighten($color-primary-2, 5)
+      );
+      box-shadow: 12px 3px 3px darken($color: $color-primary-1, $amount: 15);
+    } //end hover
+  } //end a href
+} //end btn_order
