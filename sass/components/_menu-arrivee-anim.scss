@@ -35,7 +35,7 @@
 }
 
 @for $i from 1 through 3 {
-  //définition de la boucle pour l'application du delai d'affichage en cascade : Pour chaque element enfant respecter un delai avant de lancer l'anim.
+  //définition de la boucle pour l'application du delai d'affichage en cascade : Pour chaque élément respecter un délai avant de lancer l'animation.
   .menu_wrapper:nth-child(#{$i}n) {
     animation-delay: #{$i * 0.75}s;
   }
